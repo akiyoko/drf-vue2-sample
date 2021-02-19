@@ -1,13 +1,14 @@
 module.exports = {
-  extends: [
-    'plugin:vue/base'
-  ],
-  rules: {
-    'no-console': 'off'
+  root: true,
+  env: {
+    node: true
   },
+  extends: ["plugin:vue/essential", "eslint:recommended", "@vue/prettier"],
   parserOptions: {
-     parser: 'babel-eslint',
-     ecmaVersion: 2017,
-     sourceType: 'module'
+    parser: "babel-eslint"
+  },
+  rules: {
+    "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
+    "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off"
   }
-}
+};

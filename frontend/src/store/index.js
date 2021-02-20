@@ -35,7 +35,7 @@ const authModule = {
           // 認証用トークンをlocalStorageに保存
           localStorage.setItem("access", response.data.access);
           // ユーザー情報を取得してstoreのユーザー情報を更新
-          context.dispatch("renew");
+          return context.dispatch("renew");
         });
     },
     /**

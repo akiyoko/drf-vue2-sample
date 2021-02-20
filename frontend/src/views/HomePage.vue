@@ -6,31 +6,39 @@
     <!-- メインエリア -->
     <main class="container">
       <p class="h5 mb-4">ホーム</p>
-      <form @submit.prevent="submitSave">
+      <b-form @submit.prevent="submitSave">
         <div class="row form-group">
           <label class="col-sm-3 col-form-label">タイトル</label>
           <div class="col-sm-8">
-            <input type="text" class="form-control" v-model="form.book.title" />
+            <b-form-input
+              type="text"
+              class="form-control"
+              v-model="form.book.title"
+            />
           </div>
         </div>
         <div class="row form-group">
           <label class="col-sm-3 col-form-label">価格</label>
           <div class="col-sm-8">
-            <input type="text" class="form-control" v-model="form.book.price" />
+            <b-form-input
+              type="text"
+              class="form-control"
+              v-model="form.book.price"
+            />
           </div>
         </div>
         <div class="row text-center mt-5">
           <div class="col-sm-12">
-            <button type="submit" variant="primary">
+            <b-button type="submit" variant="primary">
               {{ isCreated ? "更新" : "登録" }}
-            </button>
+            </b-button>
           </div>
         </div>
-      </form>
+      </b-form>
     </main>
 
     <!-- デバッグ -->
-    <div class="m-5">
+    <div class="m-4">
       <pre>form: {{ form }}</pre>
       <pre>state: {{ this.$store.state }}</pre>
     </div>

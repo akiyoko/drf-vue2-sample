@@ -50,7 +50,7 @@ router.beforeEach((to, from, next) => {
           .dispatch("auth/renew")
           .then(() => {
             // 再取得できたらそのまま次へ
-            console.log("Succeeded to reload. So, free to next.");
+            console.log("Succeeded to renew. So, free to next.");
             next();
           })
           .catch(() => {

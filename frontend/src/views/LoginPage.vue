@@ -6,29 +6,29 @@
     <!-- メインエリア -->
     <main class="container">
       <p class="h5 mb-4">ログイン</p>
-      <form @submit.prevent="submitLogin">
+      <b-form @submit.prevent="submitLogin">
         <div class="row form-group">
           <label class="col-sm-3 col-form-label">ユーザー名</label>
           <div class="col-sm-8">
-            <input type="text" v-model="form.username" required />
+            <b-form-input type="text" v-model="form.username" required />
           </div>
         </div>
         <div class="row form-group">
           <label class="col-sm-3 col-form-label">パスワード</label>
           <div class="col-sm-8">
-            <input type="password" v-model="form.password" required />
+            <b-form-input type="password" v-model="form.password" required />
           </div>
         </div>
         <div class="row text-center mt-5">
           <div class="col-sm-12">
-            <button type="submit" variant="primary">ログイン</button>
+            <b-button type="submit" variant="primary">ログイン</b-button>
           </div>
         </div>
-      </form>
+      </b-form>
     </main>
 
     <!-- デバッグ -->
-    <div class="m-5">
+    <div class="m-4">
       <pre>form: {{ form }}</pre>
       <pre>state: {{ this.$store.state }}</pre>
     </div>

@@ -10,13 +10,13 @@
         <div class="row form-group">
           <label class="col-sm-3 col-form-label">ユーザー名</label>
           <div class="col-sm-8">
-            <b-form-input type="text" v-model="form.username" required />
+            <b-input type="text" v-model="form.username" required />
           </div>
         </div>
         <div class="row form-group">
           <label class="col-sm-3 col-form-label">パスワード</label>
           <div class="col-sm-8">
-            <b-form-input type="password" v-model="form.password" required />
+            <b-input type="password" v-model="form.password" required />
           </div>
         </div>
         <div class="row text-center mt-5">

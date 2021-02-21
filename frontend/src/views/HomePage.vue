@@ -10,7 +10,7 @@
         <div class="row form-group">
           <label class="col-sm-3 col-form-label">タイトル</label>
           <div class="col-sm-8">
-            <b-form-input
+            <b-input
               type="text"
               class="form-control"
               v-model="form.book.title"
@@ -20,7 +20,7 @@
         <div class="row form-group">
           <label class="col-sm-3 col-form-label">価格</label>
           <div class="col-sm-8">
-            <b-form-input
+            <b-input
               type="text"
               class="form-control"
               v-model="form.book.price"

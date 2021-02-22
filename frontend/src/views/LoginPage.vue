@@ -6,7 +6,7 @@
     <!-- メインエリア -->
     <main class="container">
       <p class="h5 mb-4">ログイン</p>
-      <b-form @submit.prevent="submitLogin">
+      <b-form v-on:submit.prevent="submitLogin">
         <div class="row form-group">
           <label class="col-sm-3 col-form-label">ユーザー名</label>
           <div class="col-sm-8">

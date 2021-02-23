@@ -6,6 +6,7 @@ import LoginPage from "@/views/LoginPage.vue";
 
 Vue.use(VueRouter);
 
+// ルート定義
 const routes = [
   {
     path: "/",
@@ -23,13 +24,14 @@ const routes = [
   }
 ];
 
+// ルータインスタンスを作成
 const router = new VueRouter({
   mode: "history",
   routes
 });
 
 /**
- * Routerで画面遷移する際に毎回実行されるナビゲーションガード
+ * 画面遷移をする直前に毎回実行されるナビゲーションガード
  */
 router.beforeEach((to, from, next) => {
   const isLoggedIn = store.state.auth.isLoggedIn;

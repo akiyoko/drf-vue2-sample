@@ -5,7 +5,7 @@
       <a class="navbar-brand" href="/">DRF Sample</a>
       <b-navbar-nav class="ml-auto" v-if="$route.meta.requiresAuth">
         <b-nav-item-dropdown right v-if="isLoggedIn">
-          <template slot="button-content">{{ username }}</template>
+          <template v-slot:button-content>{{ username }}</template>
           <b-dropdown-item href="#" v-on:click="clickLogout">
             ログアウト
           </b-dropdown-item>

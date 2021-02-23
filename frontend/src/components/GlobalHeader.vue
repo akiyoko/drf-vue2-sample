@@ -10,7 +10,9 @@
             ログアウト
           </b-dropdown-item>
         </b-nav-item-dropdown>
-        <b-nav-item href="#" v-on:click="clickLogin" v-else>ログイン</b-nav-item>
+        <b-nav-item href="#" v-on:click="clickLogin" v-else>
+          ログイン
+        </b-nav-item>
       </b-navbar-nav>
     </b-navbar>
   </div>

@@ -4,8 +4,8 @@
     <GlobalMessage />
 
     <!-- メインエリア -->
-    <main class="container">
-      <p class="h5 mb-4">ホーム</p>
+    <main class="container mt-5 p-5">
+      <p class="h5 mb-5">ホーム</p>
       <b-form v-on:submit.prevent="submitSave">
         <div class="row form-group">
           <label class="col-sm-3 col-form-label">タイトル</label>
@@ -38,7 +38,7 @@
     </main>
 
     <!-- デバッグ -->
-    <div class="m-4">
+    <div class="m-5">
       <pre>form: {{ form }}</pre>
       <pre>state: {{ this.$store.state }}</pre>
     </div>
